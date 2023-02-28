@@ -7,25 +7,13 @@
 }
 
 .about .about-left {
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 3rem 1rem;
-}
-
-.sub-heading {
-  width: fit-content;
-  position: relative;
-
-  display: inline-block;
-  color: var(--bg-color-1);
-  font-family: Featured Item;
-  letter-spacing: 2px;
-  line-height: 1;
-  font-weight: 400;
-  margin-bottom: 1.5rem;
 }
 
 .sub-heading::after {
@@ -54,7 +42,8 @@
 
 .about .fancy {
   width: fit-content;
-  height: 4rem;
+  padding: 1rem 3rem;
+  height: fit-content;
   color: black;
   border-color: black;
 }
@@ -72,4 +61,40 @@
 .about .bottom-key-2,
 .about .top-key {
   background: white;
+}
+
+.about .about-right {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.about .about-slider {
+  width: 30rem;
+  height: 100%;
+  display: block;
+  padding: 2rem 0 2.5rem;
+}
+
+.about .slide {
+  display: block;
+  padding: 0 2.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.about .slide-img {
+  width: 25rem;
+  height: 30rem;
+  object-fit: cover;
+}
+
+:root {
+  --swiper-pagination-color: var(--main-color-dark-1);
+  --swiper-pagination-bullet-size: 6px;
+  --swiper-pagination-bullet-width: 6px;
+  --swiper-pagination-bullet-height: 6px;
+  --swiper-pagination-bullet-horizontal-gap: 8px;
 }

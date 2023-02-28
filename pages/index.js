@@ -2,6 +2,7 @@ import Head from 'next/head'
 import HomeSection from '@/components/home/homeSection'
 import Header from '@/components/home/header'
 import AboutUs from '@/components/about/about'
+import Services from '@/components/services/services'
 
 
 
@@ -16,10 +17,13 @@ export default function Home() {
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
 
       </Head>
-      <Header/>
+      
+      
       <main className='main'>
+        
         <HomeSection />
         <AboutUs/>
+        <Services/>
        
       </main>
     </>

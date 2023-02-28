@@ -1,13 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
 import TbcLogo from '../../public/assets/tbc-logo.png'
-import JusticeStatueImg from '../../public/assets/marble.webp'
+import MarbleImg from '../../public/assets/marble.webp'
+import LadyJusticeImg from '../../public/assets/ladyjustice.png'
+import Header from './header'
 
 function HomeSection() {
   return (
     <section className="home">
-       
-        <Image src={JusticeStatueImg} alt=''  className='statue'/>
+        <Header/>
+        <Image src={MarbleImg} alt=''  className='marble'/>
         <div className="home-header">
             <div className="header-left">
               <a href="#" className="logo">
@@ -55,7 +57,9 @@ function HomeSection() {
                 </div>
 
             </div>
-            <div className="home-right"></div>
+            <div className="home-right">
+              <Image src={LadyJusticeImg}  alt=''  className='statue'/>
+            </div>
 
 
         </div>
