@@ -1,0 +1,75 @@
+.about .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.about .about-left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 3rem 1rem;
+}
+
+.sub-heading {
+  width: fit-content;
+  position: relative;
+
+  display: inline-block;
+  color: var(--bg-color-1);
+  font-family: Featured Item;
+  letter-spacing: 2px;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.sub-heading::after {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 1.8px;
+  background-color: var(--main-color-dark-1);
+  right: calc(-10% - 3rem);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about .heading-text {
+  color: black;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about .text {
+  margin-bottom: 2rem;
+}
+
+.about .fancy {
+  width: fit-content;
+  height: 4rem;
+  color: black;
+  border-color: black;
+}
+
+.about .fancy::before {
+  background: black;
+}
+.about .fancy .btn-text {
+  color: black;
+  align-items: center;
+  justify-self: center;
+}
+
+.about .bottom-key-1,
+.about .bottom-key-2,
+.about .top-key {
+  background: white;
+}
