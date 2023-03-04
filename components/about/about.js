@@ -2,15 +2,31 @@ import React, { useEffect } from 'react'
 import Btn from "@/components/btn"
 import Image from 'next/image';
 import { register } from 'swiper/element/bundle';
-import 'swiper/css';
+import "swiper/swiper.min.css";
+import 'swiper/css/pagination';
 import TbcLogo from '../../public/assets/tbc-logo.png'
 import MarbleImg from '../../public/assets/marble.webp'
 import LadyJusticeImg from '../../public/assets/ladyjustice.png'
+  import { Navigation, Pagination } from 'swiper';
+
 
 function AboutUs() {
 
   useEffect(()=>{
     register();
+     const swiperEl = document.querySelector('swiper-container');
+
+  const params = {
+    modules: [Pagination],
+    // inject same style to shadow DOM
+    injectStylesUrls: [
+      '@/styles/about.css',
+    ],
+  };
+
+  Object.assign(swiperEl, params);
+
+  swiperEl.initialize();
   },[])
 
   return (
@@ -28,8 +44,8 @@ function AboutUs() {
                 <Btn text="Read More" />
             </div>
             <div className="about-right">
-              <swiper-container
-              pagination="true" clickable={true} autoplay='true' longSwipes="false" 
+              <swiper-container init='false'
+              pagination="true"  clickable='true' autoplay='true' longSwipes="false" 
                slides-per-view="1" speed="400" loop="true" cssMode='true' class="about-slider"
               >
 

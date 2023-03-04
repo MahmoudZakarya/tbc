@@ -3,6 +3,7 @@ import HomeSection from '@/components/home/homeSection'
 import Header from '@/components/home/header'
 import AboutUs from '@/components/about/about'
 import Services from '@/components/services/services'
+import OurPeople from '@/components/our-people/our-people'
 
 
 
@@ -15,6 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.css"/>
 
       </Head>
       
@@ -24,6 +26,7 @@ export default function Home() {
         <HomeSection />
         <AboutUs/>
         <Services/>
+        <OurPeople/>
        
       </main>
     </>
