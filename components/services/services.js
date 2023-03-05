@@ -9,7 +9,7 @@ function Services() {
   return (
     <section className="services section">
 
-        <Image src={libraryImg} alt='' className='services-bg'/>
+        <Image src={libraryImg} alt='' className='section-bg'/>
         <div className="container">
             <div className="services-left">
                 <h3 className="sub-heading">Our Services</h3>

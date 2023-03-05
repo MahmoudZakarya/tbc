@@ -6,6 +6,7 @@ import '@/styles/header.css'
 import '@/styles/about.css'
 import '@/styles/services.css'
 import '@/styles/our-people.css'
+import '@/styles/clients.css'
 
 
 

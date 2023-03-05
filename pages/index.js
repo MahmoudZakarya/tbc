@@ -4,6 +4,7 @@ import Header from '@/components/home/header'
 import AboutUs from '@/components/about/about'
 import Services from '@/components/services/services'
 import OurPeople from '@/components/our-people/our-people'
+import OurClients from '@/components/our-clients/our-clients'
 
 
 
@@ -27,6 +28,7 @@ export default function Home() {
         <AboutUs/>
         <Services/>
         <OurPeople/>
+        <OurClients/>
        
       </main>
     </>

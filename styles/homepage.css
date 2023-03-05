@@ -60,7 +60,7 @@
   cursor: pointer;
 }
 
-.home .container {
+.home .home-container {
   height: calc(100vh - 8rem);
   padding: 0 4rem;
   width: 100%;
@@ -212,7 +212,7 @@
 
 .fancy:hover::before {
   width: 0.9375rem;
-  background: white;
+  background: black;
 }
 
 .fancy:hover .btn-text {

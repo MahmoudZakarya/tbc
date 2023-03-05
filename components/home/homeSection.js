@@ -25,7 +25,7 @@ function HomeSection() {
             <div className="header-right"><i className="uil uil-search"></i></div>
 
         </div>
-        <div className="container">
+        <div className="home-container">
             <div className="home-left">
                 <h1 className="heading">
                     Protection liberty <br />

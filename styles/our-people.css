@@ -82,13 +82,12 @@ swiper-container.people-slider swiper-slide {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow-y: visible;
   align-items: center;
-  position: relative;
   width: 15rem;
   z-index: 10;
   bottom: 0;
   transition: 0.6s ease-in-out;
+  user-select: none;
 }
 
 swiper-container.people-slider swiper-slide.swiper-slide-active .slide-img {

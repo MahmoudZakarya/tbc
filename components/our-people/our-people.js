@@ -3,12 +3,10 @@ import Btn from "@/components/btn"
 import Image from 'next/image';
 import { register } from 'swiper/element/bundle';
 import "swiper/swiper.min.css";
-
 import 'swiper/css/pagination';
 import TbcLogo from '../../public/assets/tbc-logo.png'
 import MarbleImg from '../../public/assets/marble.webp'
 import LadyJusticeImg from '../../public/assets/ladyjustice.png'
-import { Pagination } from 'swiper';
 
 
 
@@ -99,7 +97,6 @@ function OurPeople() {
                    if(!swiperEl.swiper.isBeginning){
                           
                           swiperEl.swiper.slidePrev();
-                          console.log("PrevClicked");
                        }
                  }
                 
@@ -108,7 +105,6 @@ function OurPeople() {
                   const swiperEl = document.querySelector('swiper-container.people-slider');
                        if(!swiperEl.swiper.isEnd){
                          swiperEl.swiper.slideNext();
-                         console.log("NxtClicked");
                        }
                  }
                 

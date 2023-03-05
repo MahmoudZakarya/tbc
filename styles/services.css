@@ -1,27 +1,9 @@
 .services {
   position: relative;
-  background-color: black;
-  /* background-image: url(../public/assets/law-library.jpg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  backdrop-filter: blur(1px);
-  background-blend-mode: screen; */
+  background-color: var(--bg-color-2);
   overflow: hidden;
 }
 
-.services-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 110%;
-  height: 110%;
-  object-fit: cover;
-  object-position: 50% 50%;
-  filter: blur(1px);
-  opacity: 0.4;
-  user-select: none;
-  pointer-events: none;
-}
 .services .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

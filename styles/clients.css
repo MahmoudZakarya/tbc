@@ -1,0 +1,158 @@
+.clients {
+  background-color: var(--bg-color-2);
+}
+
+.clients .section-bg {
+  opacity: 0.2;
+}
+.clients .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.clients .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  align-items: center;
+  justify-items: center;
+  z-index: 2;
+  border-radius: 15px;
+}
+
+.clients .clients-left {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 3rem 1rem;
+}
+
+.clients .sub-heading {
+  color: var(--sub-color-1);
+}
+
+.clients .heading-text {
+  color: var(--sub-color-1);
+}
+
+.clients .text {
+  margin-bottom: 2rem;
+}
+
+.clients .text {
+  color: lightgray;
+}
+
+.clients .fancy {
+  width: fit-content;
+}
+
+.clients .btn-text {
+  font-size: 0.8rem;
+}
+
+.clients .clients-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+swiper-container.clients-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  height: 31rem;
+  overflow: hidden;
+  user-select: none;
+}
+
+.card-slide {
+  display: grid;
+  grid-template-columns: 190px 190px;
+  grid-template-rows: 190px 190px;
+  justify-content: center;
+  gap: 2.5rem;
+  row-gap: 90px;
+  margin-right: 2rem;
+  place-content: center;
+  place-self: center;
+}
+
+swiper-slide.card-slide::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 210px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 15px solid var(--main-color-1);
+  opacity: 0.5;
+}
+
+.client-card:nth-child(1) {
+  border-radius: 40px 40px 5px 40px;
+}
+
+.client-card:nth-child(2) {
+  margin-top: 50px;
+  border-radius: 40px 40px 40px 5px;
+}
+
+.client-card:nth-child(3) {
+  margin-top: -50px;
+  border-radius: 40px 5px 40px 40px;
+}
+
+.client-card:nth-child(4) {
+  border-radius: 5px 40px 40px 40px;
+}
+
+.client-card {
+  background-color: var(--sub-color-1);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out, 0.7s ease-in-out background-color;
+  z-index: 2;
+}
+
+.client-card:hover {
+  transform: scale(1.1);
+}
+
+.client-card img {
+  width: 5.5rem;
+  height: auto;
+  user-select: none;
+}
+
+.clients .swiper-btn:hover {
+  background-color: var(--main-color-1);
+}
+
+.clients .btns-box {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  transform: translateX(50%);
+  z-index: 5;
+
+  padding: 0;
+}
