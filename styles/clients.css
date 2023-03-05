@@ -5,17 +5,10 @@
 .clients .section-bg {
   opacity: 0.2;
 }
-.clients .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
-  align-items: center;
-  justify-items: center;
-}
 
 .clients .container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 40% 60%;
   column-gap: 2rem;
   align-items: center;
   justify-items: center;
@@ -33,16 +26,17 @@
   padding: 3rem 1rem;
 }
 
-.clients .sub-heading {
-  color: var(--sub-color-1);
+.clients .heading {
+  margin-bottom: 3.5rem;
 }
 
-.clients .heading-text {
+.clients .sub-heading {
   color: var(--sub-color-1);
 }
 
 .clients .text {
   margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
 }
 
 .clients .text {
@@ -150,9 +144,12 @@ swiper-slide.card-slide::before {
 .clients .btns-box {
   position: absolute;
   bottom: 0%;
-  left: 0%;
+  left: 15%;
   transform: translateX(50%);
   z-index: 5;
-
   padding: 0;
+}
+
+swiper-container.clients-slider swiper-slide.swiper-slide-active {
+  opacity: 1    ;
 }

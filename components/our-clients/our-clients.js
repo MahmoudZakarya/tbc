@@ -18,6 +18,7 @@ function OurClients() {
 
     useEffect(()=>{
         register();
+
     }, []);
 
   return (
@@ -28,7 +29,6 @@ function OurClients() {
             <div className="clients-left">
                 <h3 className="sub-heading">Our Clients</h3>
                 <h1 className="heading">they trust us</h1>
-                <h3 className="heading-text">Professional procation of your <br /> interests in all areas of life</h3>
                 <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                  Odit perspiciatis delectus, esse laboriosam tempore quasi dicta odio soluta 
                  officia architecto similique consequuntur 
@@ -37,7 +37,7 @@ function OurClients() {
                 <Btn text="View All our Clients" />
             </div>
             <div className="clients-right">
-            <swiper-container centered-slides="true" slides-per-view="1" auto-height="true"  space-between="20"
+            <swiper-container   auto-height="true"  space-between="30" 
                 class="clients-slider">
 
                 <swiper-slide class="card-slide">
@@ -64,21 +64,21 @@ function OurClients() {
                 
                 <swiper-slide class="card-slide">
                 <div className="client-card">
-                  <Image src={Logo1} alt=''/>
+                  <Image src={Logo5} alt=''/>
                   
                 </div>
 
                 <div className="client-card">
-                  <Image src={Logo2} alt=''/>
+                  <Image src={Logo6} alt=''/>
                   
                 </div>
 
                 <div className="client-card">
-                  <Image src={Logo3} alt=''/>
+                  <Image src={Logo7} alt=''/>
                   
                 </div>
                 <div className="client-card">
-                  <Image src={Logo4} alt=''/>
+                  <Image src={Logo8} alt=''/>
                   
                 </div>
                 </swiper-slide>
@@ -86,12 +86,7 @@ function OurClients() {
                 
                 <swiper-slide class="card-slide">
                 <div className="client-card">
-                  <Image src={Logo1} alt=''/>
-                  
-                </div>
-
-                <div className="client-card">
-                  <Image src={Logo2} alt=''/>
+                  <Image src={Logo9} alt=''/>
                   
                 </div>
 
@@ -99,8 +94,13 @@ function OurClients() {
                   <Image src={Logo3} alt=''/>
                   
                 </div>
+
                 <div className="client-card">
-                  <Image src={Logo4} alt=''/>
+                  <Image src={Logo2} alt=''/>
+                  
+                </div>
+                <div className="client-card">
+                  <Image src={Logo5} alt=''/>
                   
                 </div>
                 </swiper-slide>
@@ -108,7 +108,12 @@ function OurClients() {
                 
                 <swiper-slide class="card-slide">
                 <div className="client-card">
-                  <Image src={Logo1} alt=''/>
+                  <Image src={Logo9} alt=''/>
+                  
+                </div>
+
+                <div className="client-card">
+                  <Image src={Logo8} alt=''/>
                   
                 </div>
 
@@ -116,13 +121,8 @@ function OurClients() {
                   <Image src={Logo2} alt=''/>
                   
                 </div>
-
                 <div className="client-card">
-                  <Image src={Logo3} alt=''/>
-                  
-                </div>
-                <div className="client-card">
-                  <Image src={Logo4} alt=''/>
+                  <Image src={Logo7} alt=''/>
                   
                 </div>
                 </swiper-slide>
