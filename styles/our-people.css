@@ -21,37 +21,6 @@
   margin-bottom: 3.5rem;
 }
 
-.our-people .fancy {
-  width: fit-content;
-  padding: 1rem 3rem;
-  height: fit-content;
-  color: black;
-  border-color: black;
-}
-
-.our-people .fancy::before {
-  background: black;
-}
-.our-people .fancy .btn-text {
-  color: black;
-  align-items: center;
-  justify-self: center;
-}
-
-.our-people .bottom-key-1,
-.our-people .bottom-key-2,
-.our-people .top-key {
-  background: white;
-}
-
-.our-people .fancy:hover .btn-text {
-  color: whitesmoke;
-}
-
-.our-people .fancy:hover::before {
-  background: whitesmoke;
-}
-
 .our-people .our-people-right {
   display: flex;
   align-items: center;

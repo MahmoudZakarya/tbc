@@ -7,6 +7,7 @@ import '@/styles/about.css'
 import '@/styles/services.css'
 import '@/styles/our-people.css'
 import '@/styles/clients.css'
+import '@/styles/news.css'
 
 
 

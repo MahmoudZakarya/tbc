@@ -40,36 +40,10 @@
   margin-bottom: 2rem;
 }
 
-.about .fancy {
-  width: fit-content;
-  padding: 1rem 3rem;
-  height: fit-content;
-  color: black;
-  border-color: black;
-}
-
-.about .fancy::before {
-  background: black;
-}
-.about .fancy .btn-text {
-  color: black;
-  align-items: center;
-  justify-self: center;
-}
-
-.about .bottom-key-1,
-.about .bottom-key-2,
-.about .top-key {
-  background: white;
-}
-
 .about .fancy:hover .btn-text {
   color: whitesmoke;
 }
 
-.about .fancy:hover::before {
-  background: whitesmoke;
-}
 .about .about-right {
   display: flex;
   align-items: center;

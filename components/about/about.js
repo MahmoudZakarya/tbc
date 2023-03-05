@@ -58,7 +58,7 @@ function AboutUs() {
                  officia architecto similique consequuntur 
                 eius ipsum incidunt expedita veritatis blanditiis possimus animi.</p>
 
-                <Btn text="Read More" />
+                <Btn text="Read More" color="white" />
             </div>
             <div className="about-right">
               <swiper-container init='false'

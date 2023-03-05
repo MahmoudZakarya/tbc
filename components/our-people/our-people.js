@@ -29,7 +29,7 @@ function OurPeople() {
                  officia architecto similique consequuntur 
                 eius ipsum incidunt expedita veritatis blanditiis possimus animi.</p>
 
-                <Btn text="View All" />
+                <Btn text="View All" color="white" />
             </div>
             <div className="our-people-right">
                 <swiper-container slides-per-view="auto"

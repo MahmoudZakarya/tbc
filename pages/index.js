@@ -5,6 +5,7 @@ import AboutUs from '@/components/about/about'
 import Services from '@/components/services/services'
 import OurPeople from '@/components/our-people/our-people'
 import OurClients from '@/components/our-clients/our-clients'
+import News from '@/components/news/news'
 
 
 
@@ -29,6 +30,7 @@ export default function Home() {
         <Services/>
         <OurPeople/>
         <OurClients/>
+        <News/>
        
       </main>
     </>
