@@ -9,7 +9,7 @@ function HomeSection() {
   return (
     <section className="home">
         <Header/>
-        <Image src={MarbleImg} alt=''  className='marble'/>
+        <Image priority={true} src={MarbleImg} alt=''  className='marble'/>
         <div className="home-header">
             <div className="header-left">
               <a href="#" className="logo">

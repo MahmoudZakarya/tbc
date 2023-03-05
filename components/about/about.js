@@ -3,28 +3,45 @@ import Btn from "@/components/btn"
 import Image from 'next/image';
 import { register } from 'swiper/element/bundle';
 import "swiper/swiper.min.css";
+
 import 'swiper/css/pagination';
 import TbcLogo from '../../public/assets/tbc-logo.png'
 import MarbleImg from '../../public/assets/marble.webp'
 import LadyJusticeImg from '../../public/assets/ladyjustice.png'
-  import { Navigation, Pagination } from 'swiper';
+import { Pagination } from 'swiper';
+
 
 
 function AboutUs() {
 
   useEffect(()=>{
     register();
+   
      const swiperEl = document.querySelector('swiper-container');
 
   const params = {
     modules: [Pagination],
+
+
+     injectStyles: [
+      `
+      .swiper-pagination-bullet {
+        cursor:pointer;
+       
+
+}
+
+      `,
+    ],
     // inject same style to shadow DOM
     injectStylesUrls: [
-      '@/styles/about.css',
+      '../../styles/about.css',
     ],
   };
 
+
   Object.assign(swiperEl, params);
+
 
   swiperEl.initialize();
   },[])
@@ -45,8 +62,9 @@ function AboutUs() {
             </div>
             <div className="about-right">
               <swiper-container init='false'
-              pagination="true"  clickable='true' autoplay='true' longSwipes="false" 
-               slides-per-view="1" speed="400" loop="true" cssMode='true' class="about-slider"
+              
+                 autoplay='true' longSwipes="false" pagination='true' pagination-clickable="true"
+               slides-per-view="1" speed="400" loop="true"  class="about-slider"
               >
 
                 <swiper-slide class='about-slide'>
