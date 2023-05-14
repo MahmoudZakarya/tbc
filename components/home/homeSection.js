@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
-import TbcLogo from '../../public/assets/tbc-logo.png'
+// import TbcLogo from '../../public/assets/tbc-logo.png'
 import MarbleImg from '../../public/assets/marble.webp'
 import LadyJusticeImg from '../../public/assets/ladyjustice.png'
 import Header from './header'
+import TbcLogo from '../../public/assets/svg-logo.svg'
 
 function HomeSection() {
   return (
@@ -14,10 +15,11 @@ function HomeSection() {
             <div className="header-left">
               <a href="#" className="logo">
                 {/* here will be the logo */}
-                <Image src={TbcLogo} alt='tbc logo' width={40}/>
+                {/* <Image src={TbcLogo} quality={100} alt='tbc logo' width={40}/> */}
+                <TbcLogo/>
                 <div className="logo-text">
                   <h1>turkel barrios cuva</h1>
-                  <p>Law Company</p>
+                  <p>Since 1980</p>
                 </div>
               </a>
             </div>
@@ -28,7 +30,7 @@ function HomeSection() {
         <div className="home-container">
             <div className="home-left">
                 <h1 className="heading">
-                    Protection liberty <br />
+                   <span> Protection liberty</span> <br />
                     finding solution
                 </h1>
                 <div className="sub-text-container">
@@ -58,7 +60,7 @@ function HomeSection() {
 
             </div>
             <div className="home-right">
-              <Image src={LadyJusticeImg}  alt=''  className='statue'/>
+              <Image priority={true} src={LadyJusticeImg}  alt=''  className='statue'/>
             </div>
 
 

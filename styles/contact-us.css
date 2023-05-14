@@ -1,0 +1,130 @@
+.contact-us {
+  position: relative;
+  background-color: var(--bg-color-2);
+  overflow: hidden;
+}
+
+.contact-us .container {
+  grid-template-columns: 0.8fr 1fr;
+}
+
+.contact-us .section-bg {
+  opacity: 0.2;
+}
+
+.contact-us .heading {
+  margin-bottom: 2rem;
+}
+
+.contact-us .text {
+  color: whitesmoke;
+  margin-bottom: 4rem;
+}
+
+.mini-heading {
+  font-size: 1.6rem;
+}
+
+.contact-us .contacts-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.contact-us .contact-card {
+  display: flex;
+  align-items: center;
+}
+
+.contact-us .contact-card p {
+  display: inline-block;
+  margin-left: 0.6rem;
+  font-size: 1.2rem;
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
+.contact-us .contact-card i {
+  align-self: flex-end;
+}
+
+.contact-form {
+  background-color: var(--bg-color-2);
+  border-radius: 20px;
+  padding: 3.5rem 3rem;
+
+  transition: 0.7s ease-in-out background-color;
+}
+
+.contact-form .wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-form .wrapper:nth-child(1) {
+}
+
+.contact-form h3 {
+  color: var(--heading-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  line-height: 0.9;
+  transition: 0.7s ease-in-out color;
+}
+
+.form-input {
+  display: inline-block;
+  padding: 0.9rem 1rem;
+  background-color: transparent;
+  border: 2.5px solid rgba(245, 245, 245, 0.323);
+  width: 100%;
+  border-radius: 8px;
+  font-family: sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--heading-color);
+  outline: none;
+  transition: 0.3s ease-in-out, 0.7s ease-in-out background-color,
+    0.7s ease-in-out border-color, 0.7s ease-in-out color;
+}
+
+.form-input:hover {
+  filter: brightness(95%);
+}
+
+.form-input:focus,
+.form-input:valid {
+  filter: brightness(100%);
+  background-color: transparent;
+  border-color: var(--main-color-1);
+}
+
+.form-input::placeholder {
+  color: whitesmoke;
+  font-weight: 100;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+
+textarea.form-input {
+  resize: none;
+  min-height: 170px;
+}
+
+.contact-form .form-input {
+  margin-bottom: 1.5rem;
+}
+
+.contact-us .fancy {
+  border-color: rgba(245, 245, 245, 0.323);
+  font-weight: 200;
+  font-family: sans-serif;
+}
+
+.contact-us label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: rgba(245, 245, 245, 0.323);
+  font-size: 0.8rem;
+  font-family: sans-serif;
+}

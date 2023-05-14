@@ -1,5 +1,6 @@
 .clients {
   background-color: var(--bg-color-2);
+  overflow: hidden;
 }
 
 .clients .section-bg {
@@ -151,5 +152,5 @@ swiper-slide.card-slide::before {
 }
 
 swiper-container.clients-slider swiper-slide.swiper-slide-active {
-  opacity: 1    ;
+  opacity: 1;
 }

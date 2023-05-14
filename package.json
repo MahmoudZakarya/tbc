@@ -17,6 +17,8 @@
     "swiper": "^9.1.0"
   },
   "devDependencies": {
+    "@babel/types": "^7.21.3",
+    "@svgr/webpack": "^6.5.1",
     "@types/react": "^18.0.28"
   }
 }

@@ -5,9 +5,9 @@ import { register } from 'swiper/element/bundle';
 import "swiper/swiper.min.css";
 
 import 'swiper/css/pagination';
-import TbcLogo from '../../public/assets/tbc-logo.png'
-import MarbleImg from '../../public/assets/marble.webp'
-import LadyJusticeImg from '../../public/assets/ladyjustice.png'
+import Photo1 from '../../public/assets/photo1.jpg'
+import Photo2 from '../../public/assets/photo2.jpg'
+import Photo3 from '../../public/assets/photo3.jpg'
 import { Pagination } from 'swiper';
 
 
@@ -69,18 +69,18 @@ function AboutUs() {
 
                 <swiper-slide class='about-slide'>
                   <div className='slide'>
-                  <Image alt='' src={LadyJusticeImg} className='slide-img' />
+                  <Image alt='' src={Photo1} className='slide-img' />
                   </div>
                 </swiper-slide>
                
                 <swiper-slide class='about-slide'>
                   <div className='slide'>
-                  <Image alt='' src={TbcLogo} className='slide-img' />
+                  <Image alt='' src={Photo2} className='slide-img' />
                   </div>
                 </swiper-slide>
                 <swiper-slide class='about-slide'>
                   <div className='slide'>
-                  <Image alt='' src={MarbleImg} className='slide-img' />
+                  <Image alt='' src={Photo3} className='slide-img' />
                   </div>
                 </swiper-slide>
 

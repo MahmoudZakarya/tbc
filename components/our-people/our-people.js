@@ -4,9 +4,11 @@ import Image from 'next/image';
 import { register } from 'swiper/element/bundle';
 import "swiper/swiper.min.css";
 import 'swiper/css/pagination';
-import TbcLogo from '../../public/assets/tbc-logo.png'
-import MarbleImg from '../../public/assets/marble.webp'
-import LadyJusticeImg from '../../public/assets/ladyjustice.png'
+import JimImg from '../../public/assets/Jim-Christy.jpg'
+import DevinImg from '../../public/assets/Devin-Stone.jpg'
+import OliviaImg from '../../public/assets/Olivia-Wells.jpg'
+import PeterImg from '../../public/assets/Peter-Zinkovetsky.webp'
+import SeanImg from '../../public/assets/Sean-Robichaud.webp'
 
 
 
@@ -37,55 +39,48 @@ function OurPeople() {
                    class="people-slider"
               >
 
-                <swiper-slide class='people-slide'>
-                      <Image alt='' src={LadyJusticeImg} className='slide-img' />
-                      <div className="member-info">
-                        <h3>Mahmoud Zakaria</h3>
-                        <p>Attorny</p>
-                      </div>
-                </swiper-slide>
                
                 <swiper-slide class='people-slide'>
-                  <Image alt='' src={TbcLogo} className='slide-img' />
+                  <Image alt='' src={JimImg} className='slide-img' />
                   
                   <div className="member-info">
-                        <h3>Mahmoud Zakaria</h3>
+                        <h3>Jim Christy</h3>
+                        <p>Attorny</p>
+                      </div>
+                </swiper-slide>
+                
+                <swiper-slide class='people-slide'>
+                      <Image alt='' src={OliviaImg} className='slide-img' />
+                      <div className="member-info">
+                        <h3>Olivia Wells</h3>
                         <p>Attorny</p>
                       </div>
                 </swiper-slide>
                 <swiper-slide class='people-slide'>
-                  <Image alt='' src={MarbleImg} className='slide-img' />
+                  <Image alt='' src={DevinImg} className='slide-img' />
                   <div className="member-info">
-                        <h3>Mahmoud Zakaria</h3>
-                        <p>Attorny</p>
-                      </div>
-                  
-                </swiper-slide>
-                <swiper-slide class='people-slide'>
-                  <Image alt='' src={MarbleImg} className='slide-img' />
-                  <div className="member-info">
-                        <h3>Mahmoud Zakaria</h3>
-                        <p>Attorny</p>
-                      </div>
-                  
-                </swiper-slide>
-                <swiper-slide class='people-slide'>
-                  <Image alt='' src={MarbleImg} className='slide-img' />
-                  <div className="member-info">
-                        <h3>Mahmoud Zakaria</h3>
+                        <h3>Devin Stone</h3>
                         <p>Attorny</p>
                       </div>
                   
                 </swiper-slide>
                 <swiper-slide class='people-slide'>
-                  <Image alt='' src={MarbleImg} className='slide-img' />
-
+                  <Image alt='' src={PeterImg} className='slide-img' />
                   <div className="member-info">
-                        <h3>Mahmoud Zakaria</h3>
+                        <h3>Peter Zinkovetsky</h3>
                         <p>Attorny</p>
                       </div>
                   
                 </swiper-slide>
+                <swiper-slide class='people-slide'>
+                  <Image alt='' src={SeanImg} className='slide-img' />
+                  <div className="member-info">
+                        <h3>Sean Robichaud</h3>
+                        <p>Attorny</p>
+                      </div>
+                  
+                </swiper-slide>
+            
 
 
               </swiper-container>
