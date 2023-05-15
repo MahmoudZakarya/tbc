@@ -5,11 +5,6 @@
 }
 
 .services .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
-  align-items: center;
-  justify-items: center;
   z-index: 2;
   border-radius: 15px;
   background-color: rgba(15, 15, 15, 0.707);
@@ -50,11 +45,13 @@
 }
 
 .services-right {
+  display: flex;
   width: 100%;
   height: 100%;
   z-index: 2;
   align-self: center;
   justify-self: center;
+  justify-content: center;
 }
 
 .services .card-container {

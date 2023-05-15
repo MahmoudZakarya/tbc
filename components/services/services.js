@@ -25,20 +25,20 @@ function Services() {
             <div className="services-right">
                 <div className="card-container">
                     <div className="card">
-                        <i className="uil uil-shield"></i>
-                        <h3 className="card-title">Social Security Benefits</h3>
+                        <i class="uil uil-building"></i>
+                        <h3 className="card-title">Real Estate <br /> Law</h3>
+                    </div>
+                     <div className="card">
+                        <i class="uil uil-users-alt"></i>
+                        <h3 className="card-title">Estate <br /> Law</h3>
                     </div>
                      <div className="card">
                         <i className="uil uil-shield"></i>
                         <h3 className="card-title">Social Security Benefits</h3>
                     </div>
                      <div className="card">
-                        <i className="uil uil-shield"></i>
-                        <h3 className="card-title">Social Security Benefits</h3>
-                    </div>
-                     <div className="card">
-                        <i className="uil uil-shield"></i>
-                        <h3 className="card-title">Social Security Benefits</h3>
+                        <i class="uil uil-suitcase-alt"></i>
+                        <h3 className="card-title">Immigration <br />Law</h3>
                     </div>
 
                 </div>

@@ -1,0 +1,16 @@
+@media (max-width: 1000px) {
+  :root {
+    --section-padding: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    height: revert;
+    justify-items: center;
+    row-gap: 0rem;
+    min-height: 100vh;
+    column-gap: 0rem;
+  }
+}

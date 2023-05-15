@@ -84,10 +84,13 @@ swiper-container.people-slider swiper-slide.swiper-slide-active .member-info {
 
 .member-info h3 {
   color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
 }
 
 .member-info p {
   color: gray;
+  font-family: serif;
 }
 .btns-box {
   padding: 1rem;

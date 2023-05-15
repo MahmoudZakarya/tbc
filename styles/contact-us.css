@@ -4,10 +4,6 @@
   overflow: hidden;
 }
 
-.contact-us .container {
-  grid-template-columns: 0.8fr 1fr;
-}
-
 .contact-us .section-bg {
   opacity: 0.2;
 }

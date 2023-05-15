@@ -9,6 +9,7 @@ import '@/styles/our-people.css'
 import '@/styles/clients.css'
 import '@/styles/news.css'
 import '@/styles/contact-us.css'
+import '@/styles/responsive.css'
 
 
 
