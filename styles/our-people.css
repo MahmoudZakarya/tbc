@@ -30,6 +30,10 @@
   height: 115%;
 }
 
+.our-people swiper-container {
+  position: relative;
+  width: 100%;
+}
 .our-people .slide-img {
   display: block;
   width: 15rem;
@@ -42,7 +46,7 @@ swiper-container.people-slider {
   position: relative;
   display: block;
   width: 100%;
-  height: 100%;
+  height: 90%;
   overflow: hidden;
   margin-top: auto;
 }

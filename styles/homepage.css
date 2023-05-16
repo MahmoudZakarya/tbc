@@ -91,13 +91,12 @@
 }
 
 .sub-text {
-  display: block;
+  display: flex;
   position: relative;
   font-size: 1rem;
   font-weight: 200;
   font-family: sans-serif;
   line-height: 1.6;
-  align-self: center;
   left: 15%;
 }
 

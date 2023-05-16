@@ -4,6 +4,8 @@
   column-gap: 2rem;
   align-items: center;
   justify-items: center;
+  height: 100%;
+  padding: 10px;
 }
 
 .about .about-left {

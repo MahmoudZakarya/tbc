@@ -35,7 +35,7 @@ function OurPeople() {
             </div>
             <div className="our-people-right">
                 <swiper-container slides-per-view="auto"
-               centered-slides="true" space-between="20"
+               centered-slides="true" space-between="10"
                    class="people-slider"
               >
 

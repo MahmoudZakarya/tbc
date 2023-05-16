@@ -26,17 +26,16 @@ body.open .header {
 }
 
 .hamburger {
+  position: absolute;
   display: flex;
   padding: 1rem 0;
   height: 12px;
   width: 25px;
   box-sizing: content-box;
   cursor: pointer;
-  position: absolute;
   left: 0%;
   margin-left: 1.7rem;
   transform: translate(50%, 50%);
-
   transition: 0.6s ease-in-out;
   z-index: 20;
 }
@@ -87,9 +86,6 @@ body.open .hamburger .bar:last-child {
   transform: right 0.6s ease-in-out;
 }
 
-body.open .header .socials {
-}
-
 .socials .social-link {
   margin-bottom: 0.7rem;
 }
@@ -112,6 +108,10 @@ body.open .header .socials {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 200;
   transition: 0.7s ease-in-out color;
+}
+
+.menu-item:hover {
+  color: var(--main-color-dark-1);
 }
 
 .menu {
