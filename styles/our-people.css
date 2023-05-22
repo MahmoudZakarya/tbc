@@ -109,7 +109,7 @@ swiper-container.people-slider swiper-slide.swiper-slide-active .member-info {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px 7px;
+  padding: 5px 10px;
   border-radius: 50%;
   background-color: lightgray;
   transition: 0.5s ease-in-out;

@@ -7,6 +7,7 @@ import OurPeople from '@/components/our-people/our-people'
 import OurClients from '@/components/our-clients/our-clients'
 import News from '@/components/news/news'
 import ContactUs from '@/components/contact-us/contactus'
+import Footer from '@/components/footer/footer'
 
 
 
@@ -33,6 +34,7 @@ export default function Home() {
         <OurClients/>
         <News/>
         <ContactUs/>
+        {/* <Footer/> */}
        
       </main>
     </>
