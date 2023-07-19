@@ -1,11 +1,24 @@
 import React from 'react'
 import Btn from "@/components/btn"
 import NewsCard from './news-card';
-
+import { useEffect, useRef } from 'react';
 function News() {
+
+
+     const newsInfo = useRef(null);
+  useEffect(()=>{
+
+       async function animate(){
+      if(newsInfo.current){
+        const sr = (await import("scrollreveal")).default
+        sr().reveal(newsInfo.current, {delay: 300, duration:2000, distance:'100px' })
+      }
+    }
+
+    animate(); } )
   return (
     <section className="news section">
-        <div className="container">
+        <div className="container" ref={newsInfo}>
             <div className="news-head">
                 <div className="left">
                     <h3 className="sub-heading">News</h3>

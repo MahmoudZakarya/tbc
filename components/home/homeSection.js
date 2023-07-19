@@ -1,18 +1,39 @@
 import Image from 'next/image'
-import React from 'react'
+import React , { useEffect, useRef } from 'react'
 // import TbcLogo from '../../public/assets/tbc-logo.png'
 import MarbleImg from '../../public/assets/marble.webp'
 import LadyJusticeImg from '../../public/assets/ladyjustice.png'
 import Header from './header'
 import TbcLogo from '../../public/assets/svg-logo.svg'
 
+
+
 function HomeSection() {
+
+  const homeInfo = useRef(null);
+ const homeImg = useRef(null);
+  useEffect(()=>{
+
+    async function animate(){
+      if(homeInfo.current && homeImg.current){
+        const sr = (await import("scrollreveal")).default
+        sr().reveal(homeInfo.current, {delay: 600, duration:2500, distance:'60px' })
+        sr().reveal(homeImg.current, {delay: 700, duration:2500, distance:'60px', origin:"top" })
+      }
+    }
+
+    animate();
+    
+
+
+  }, []);
+
   return (
     <section className="home">
         <Header/>
         <Image priority={true} src={MarbleImg} alt=''  className='marble'/>
-        <div className="home-header">
-            <div className="header-left">
+        <div className="home-header" >
+            <div className="header-left" >
               <a href="#" className="logo">
                 {/* here will be the logo */}
                 {/* <Image src={TbcLogo} quality={100} alt='tbc logo' width={40}/> */}
@@ -24,11 +45,11 @@ function HomeSection() {
               </a>
             </div>
 
-            <div className="header-right"><i className="uil uil-search"></i></div>
+            <div className="header-right" ><i className="uil uil-search"></i></div>
 
         </div>
         <div className="home-container">
-            <div className="home-left">
+            <div className="home-left" ref={homeInfo}>
                 <h1 className="heading">
                    <span> Protection liberty</span> <br />
                     finding solution
@@ -59,7 +80,7 @@ function HomeSection() {
                 </div>
 
             </div>
-            <div className="home-right">
+            <div className="home-right" ref={homeImg}>
               <Image priority={true} src={LadyJusticeImg}  alt=''  className='statue'/>
             </div>
 

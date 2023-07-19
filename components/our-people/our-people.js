@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Btn from "@/components/btn"
 import Image from 'next/image';
 import { register } from 'swiper/element/bundle';
@@ -14,7 +14,19 @@ import SeanImg from '../../public/assets/Sean-Robichaud.webp'
 
 function OurPeople() {
 
+  const peopleInfo = useRef(null);
+ const peopleImg = useRef(null);
  useEffect(()=>{
+
+   async function animate(){
+      if(peopleInfo.current && peopleImg.current){
+        const sr = (await import("scrollreveal")).default
+        sr().reveal(peopleInfo.current, {delay: 300, duration:2000, distance:'80px' })
+        sr().reveal(peopleImg.current, {delay:400, duration:2000, distance:'80px' })
+      }
+    }
+
+    animate();
     register();
    
       },[])
@@ -23,7 +35,7 @@ function OurPeople() {
   return (
     <section className="our-people section">
         <div className="container">
-            <div className="our-people-left">
+            <div className="our-people-left" ref={peopleInfo}>
                 <h3 className="sub-heading">Our People</h3>
                 <h1 className="heading">Meet Out Attorneys</h1>
                 <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -33,7 +45,7 @@ function OurPeople() {
 
                 <Btn text="View All" color="white" />
             </div>
-            <div className="our-people-right">
+            <div className="our-people-right" ref={peopleImg}>
                 <swiper-container slides-per-view="auto"
                centered-slides="true" space-between="10"
                    class="people-slider"

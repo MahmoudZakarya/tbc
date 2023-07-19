@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Btn from "@/components/btn"
 import Image from 'next/image';
 import { register } from 'swiper/element/bundle';
@@ -13,8 +13,20 @@ import { Pagination } from 'swiper';
 
 
 function AboutUs() {
-
+  const aboutInfo = useRef(null);
+ const aboutImg = useRef(null);
   useEffect(()=>{
+
+       async function animate(){
+      if(aboutInfo.current && aboutImg.current){
+        const sr = (await import("scrollreveal")).default
+        sr().reveal(aboutInfo.current, {delay: 300, duration:2000, distance:'100px' })
+        sr().reveal(aboutImg.current, {delay:400, duration:2000, distance:'100px' })
+      }
+    }
+
+    animate();
+
     register();
    
      const swiperEl = document.querySelector('swiper-container');
@@ -49,7 +61,7 @@ function AboutUs() {
   return (
     <section className="about section">
         <div className="container">
-            <div className="about-left">
+            <div className="about-left" ref={aboutInfo}>
                 <h3 className="sub-heading">About us</h3>
                 <h1 className="heading">Welcome To TBC</h1>
                 <h3 className="heading-text">The top tier international law firm, <br /> from Turkey, for the world.</h3>
@@ -60,7 +72,7 @@ function AboutUs() {
 
                 <Btn text="Read More" color="white" />
             </div>
-            <div className="about-right">
+            <div className="about-right" ref={aboutImg}>
               <swiper-container init='false'
               
                  autoplay='true' longSwipes="false" pagination='true' pagination-clickable="true"
